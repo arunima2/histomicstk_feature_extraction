@@ -24,10 +24,14 @@ In it's current form the script does not need everything under the umbrella of "
 Should suffice as of now.
 
 ## Usage
-python get_histomics_features.py <path of image to analyze> <path of image to normalize the input image to> <minimum nuclei area in px for an object to be labeled nuclie> <foreground threshold to identify nuclei in grayscale <path of folder where output files should be stored>
+```
+python get_histomics_features.py <path of image to analyze> <path of image to normalize the input image to> <minimum nuclei area in px for an object to be labeled nuclie> <foreground threshold to identify nuclei in grayscale> <path of folder where output files should be stored>
+```
   
 ### Example Usage
+```
 python get_histomics_features.py ../prostate_images/T4--33-B6-L_L3R5_T4_22.png ../prostate_images/T4--33_B6_R_L1R6_T4_3.png 15 100 histomics_output/
+```
 
 ## Output files
 <file_name>-Normalization.png - Reference and normalized image
